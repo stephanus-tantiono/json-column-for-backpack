@@ -1,0 +1,28 @@
+{
+    "name": "stephanustantiono/json-column-for-backpack",
+    "description": "A Json Column column for Backpack",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "stephanustantiono",
+            "email": "stephanus.stuff@gmail.com"
+        },
+    ],
+    "homepage": "https://github.com/stephanustantiono/json-column-for-backpack",
+    "keywords": ["Laravel", "Backpack", "Backpack for Laravel", "Addon", "Admin Panel", "Json", "column"],
+    "require": {
+        "backpack/crud": "^4.1.0|^5.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "stephanustantiono\\JsoncolumnForBackpack\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "stephanustantiono\\JsonColumnForBackpack\\AddonServiceProvider"
+            ]
+        }
+    }
+}
