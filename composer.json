@@ -21,7 +21,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "stephanustantiono\\JsonColumnForBackpack\\AddonServiceProvider"
+                "StephanusTantiono\\JsonColumnForBackpack\\AddonServiceProvider"
             ]
         }
     }
