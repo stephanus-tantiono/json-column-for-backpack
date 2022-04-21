@@ -15,7 +15,7 @@
     },
     "autoload": {
         "psr-4": {
-            "StephanusTantiono\\JsoncolumnForBackpack\\": "src/"
+            "StephanusTantiono\\JsonColumnForBackpack\\": "src/"
         }
     },
     "extra": {
