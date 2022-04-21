@@ -4,11 +4,11 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "stephanustantiono",
+            "name": "Stephanus Tantiono",
             "email": "stephanus.stuff@gmail.com"
         }
     ],
-    "homepage": "https://github.com/stephanustantiono/json-column-for-backpack",
+    "homepage": "https://github.com/stephanus-tantiono/json-column-for-backpack",
     "keywords": ["Laravel", "Backpack", "Backpack for Laravel", "Addon", "Admin Panel", "Json", "column"],
     "require": {
         "backpack/crud": "^4.1.0|^5.0"
