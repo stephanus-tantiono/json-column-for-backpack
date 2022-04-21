@@ -1,6 +1,6 @@
 <?php
 
-namespace stephanustantiono\JsonColumnForBackpack;
+namespace StephanusTantiono\JsonColumnForBackpack;
 
 use Illuminate\Support\ServiceProvider;
 
