@@ -32,10 +32,10 @@ composer require stephanus-tantiono/json-column-for-backpack
 Inside your custom CrudController:
 
 ```php
-$this->crud->addField([
+$this->crud->addColumns([
     'name'  => 'column_name',
     'type'  => 'json',
-    'view_namespace' => 'json-field-for-backpack::columns',
+    'view_namespace' => 'json-column-for-backpack::columns',
 ]);
 ```
 
@@ -44,7 +44,7 @@ Notice the ```view_namespace``` attribute - make sure that is exactly as above, 
 
 ## Overwriting
 
-If you need to change the field in any way, you can easily publish the file to your app, and modify that file any way you want. But please keep in mind that you will not be getting any updates.
+If you need to change the column in any way, you can easily publish the file to your app, and modify that file any way you want. But please keep in mind that you will not be getting any updates.
 
 **Step 1.** Copy-paste the blade file to your directory:
 ```bash
@@ -55,7 +55,7 @@ mkdir -p resources/views/vendor/backpack/crud/columns
 cp -i vendor/stephanus-tantiono/json-column-for-backpack/src/resources/views/columns/json.blade.php resources/views/vendor/backpack/crud/columns/json.blade.php
 ```
 
-**Step 2.** Remove the vendor namespace wherever you've used the field:
+**Step 2.** Remove the vendor namespace wherever you've used the column:
 ```diff
 $this->crud->addColumn([
 -   'view_namespace' => 'json-column-for-backpack::columns'
