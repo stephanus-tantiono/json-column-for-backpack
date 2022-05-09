@@ -17,7 +17,7 @@ So this json column shines when you have a large json. If your json is small, [t
 
 ## Screenshots
 
-To be added later
+![https://user-images.githubusercontent.com/52034225/167371557-63eef12b-09c7-49c8-a41a-fc503d3b6908.gif](https://user-images.githubusercontent.com/52034225/167371557-63eef12b-09c7-49c8-a41a-fc503d3b6908.gif)
 
 ## Installation
 
