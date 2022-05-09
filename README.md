@@ -32,7 +32,11 @@ composer require stephanus-tantiono/json-column-for-backpack
 Inside your custom CrudController:
 
 ```php
-To be added later
+$this->crud->addField([
+    'name'  => 'column_name',
+    'type'  => 'json',
+    'view_namespace' => 'json-field-for-backpack::columns',
+]);
 ```
 
 Notice the ```view_namespace``` attribute - make sure that is exactly as above, to tell Backpack to load the column from this _addon package_, instead of assuming it's inside the _Backpack\CRUD package_.
@@ -54,7 +58,7 @@ cp -i vendor/stephanus-tantiono/json-column-for-backpack/src/resources/views/col
 **Step 2.** Remove the vendor namespace wherever you've used the field:
 ```diff
 $this->crud->addColumn([
--   'view_namespace' => 'json-column-for-backpack::fields'
+-   'view_namespace' => 'json-column-for-backpack::columns'
 ]);
 ```
 
@@ -74,8 +78,10 @@ Please see the [changelog](changelog.md) for more information on what has change
 If you discover any security related issues, please email [the author](composer.json) instead of using the issue tracker.
 
 ## Credits
-
-To be added later
+- [Steve](https://github.com/stephanus-tantiono)
+- [ziming](https://github.com/ziming)
+- [Cristian Tabacitu](https://github.com/tabacitu)
+- [Roman Makudera](https://github.com/LorDOniX)
 
 ## License
 
