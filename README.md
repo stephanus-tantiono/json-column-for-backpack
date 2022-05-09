@@ -32,7 +32,7 @@ composer require stephanus-tantiono/json-column-for-backpack
 Inside your custom CrudController:
 
 ```php
-$this->crud->addColumns([
+$this->crud->addColumn([
     'name'  => 'column_name',
     'type'  => 'json',
     'view_namespace' => 'json-column-for-backpack::columns',
