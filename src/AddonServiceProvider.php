@@ -13,6 +13,6 @@ class AddonServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->loadViewsFrom(realpath(__DIR__.'/resources/views'), 'json');
+        $this->loadViewsFrom(realpath(__DIR__.'/resources/views/columns'), 'json');
     }
 }
