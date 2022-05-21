@@ -77,10 +77,10 @@ Please see the [changelog](changelog.md) for more information on what has change
 If you discover any security related issues, please email [the author](composer.json) instead of using the issue tracker.
 
 ## Credits
-- [Steve](https://github.com/stephanus-tantiono)
-- [ziming](https://github.com/ziming)
-- [Cristian Tabacitu](https://github.com/tabacitu)
-- [Roman Makudera](https://github.com/LorDOniX)
+- [Steve](https://github.com/stephanus-tantiono) for creating this column
+- [ziming](https://github.com/ziming) for supervising
+- [Cristian Tabacitu](https://github.com/tabacitu) for creating backpack and troubleshooting issues with the column not loading correctly in the package
+- [Roman Makudera](https://github.com/LorDOniX) for creating [json-viewer](https://github.com/LorDOniX/json-viewer)
 
 ## License
 
