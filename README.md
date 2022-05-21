@@ -34,12 +34,10 @@ Inside your custom CrudController:
 ```php
 $this->crud->addColumn([
     'name'  => 'column_name',
-    'type'  => 'json',
-    'view_namespace' => 'json-column-for-backpack::columns',
+    'type'  => 'view',
+    'view' => 'json-column-for-backpack::columns.json',
 ]);
 ```
-
-Notice the ```view_namespace``` attribute - make sure that is exactly as above, to tell Backpack to load the column from this _addon package_, instead of assuming it's inside the _Backpack\CRUD package_.
 
 
 ## Overwriting
@@ -52,13 +50,14 @@ If you need to change the column in any way, you can easily publish the file to 
 mkdir -p resources/views/vendor/backpack/crud/columns
 
 # copy the blade file inside the folder we created above
-cp -i vendor/stephanus-tantiono/json-column-for-backpack/src/resources/views/columns/json.blade.php resources/views/vendor/backpack/crud/columns/json.blade.php
+cp -i vendor/stephanus-tantiono/json-column-for-backpack/src/resources/views/columns/json.blade.php resources/views/vendor/backpack/crud/columns/json_viewer.blade.php
 ```
 
-**Step 2.** Remove the vendor namespace wherever you've used the column:
+**Step 2.** Load the published file instead of the one in the vendor directory:
 ```diff
 $this->crud->addColumn([
--   'view_namespace' => 'json-column-for-backpack::columns'
+    'name'  => 'column_name',
+    'type'  => 'json_viewer',
 ]);
 ```
 
