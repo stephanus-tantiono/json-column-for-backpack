@@ -3,17 +3,11 @@
 [![Latest Version on Packagist][ico-version]][link-packagist]
 [![Total Downloads][ico-downloads]][link-downloads]
 
-This package provides a ```json``` column type for the [Backpack for Laravel](https://backpackforlaravel.com/) administration panel.
+This package provides an advanced ```json``` column type for the [Backpack for Laravel](https://backpackforlaravel.com/) administration panel. The main features as opposed to Backpack's stock `json` column are that:
+- you can expand and collapse values in the json keys;
+- the keys and values are of a different colours;
 
-Readme is not ready yet!
-
-## What is the difference between the json column in Backpack Core and this?
-
-The main difference between this json column and the json column in Backpack core are:
-- You can expand and collapse values in the json keys
-- The keys and values are of a different colours.
-
-So this json column shines when you have a large json. If your json is small, [the json column in backpack core](https://github.com/Laravel-Backpack/CRUD/pull/1951) is likely sufficient for your needs.
+If your JSON is small, [the `json` column in backpack core](https://github.com/Laravel-Backpack/CRUD/pull/1951) is likely sufficient for your needs. But if you have a large JSON, this column will really shine. 
 
 ## Screenshots
 
